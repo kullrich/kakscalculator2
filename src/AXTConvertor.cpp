@@ -1,3 +1,22 @@
+/************************************************************
+* Copyright (C) 2009, Beijing Institute of Genomics of CAS
+* All rights reserved.
+
+* Filename: AXTConvertor.cpp
+
+* Version: 2.0
+* Author: Da-Peng Wang(wangdp@big.ac.cn), Yu-Bin Zhang (ybzhang@big.ac.cn)
+* Date: Jun.1, 2009
+
+* Version: 1.0
+* Author: Zhang Zhang (zhang.zhang@yale.edu)
+* Date: Jan.31, 2005
+
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
+
+*************************************************************/
 
 #pragma warning(disable:4786)
 #include<fstream>
@@ -5,6 +24,9 @@
 #include<iostream>
 #include<sstream>
 #include<vector>
+#include<cstring>
+#include<cstdlib>
+
 
 using namespace std;
 
