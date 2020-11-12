@@ -13,6 +13,10 @@
 * Author: Zhang Zhang (zhang.zhang@yale.edu)
 * Date: Feb., 2005
 
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
+
   References: 
   Li WH, Wu CI, Luo CC  (1985)  A new method for
   estimating synonymous and nonsynonymous rates of nucleotide 
@@ -420,7 +424,7 @@ string MLWL85::Run(string stra, string strb) {
 		
 		if ((1 - 2*Pi[i] - Qi[i])>0 &&  (1 - 2*Qi[i])>0) {
 			ai[i] = 1/(1 - 2*Pi[i] - Qi[i]);
-			if (GAMMA==4||(fabs(GAMMA-0.6)<SMALLVALUE)|GAMMA==-1)
+			if (GAMMA==4||(fabs(GAMMA-0.6)<SMALLVALUE)|(GAMMA==-1))
 			{
 				name="GMLWL";
 			}
