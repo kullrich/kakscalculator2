@@ -34,15 +34,20 @@ conda install kakscalculator2
 # Run KaKs_Calculator2.0
 
 ```
-./dagchainer/bin/run_DAG_chainer.pl
+./kakscalculator2/bin/KaKs_Calculator -h
 ```
 
 # Example
 
 ```
+./bin/KaKs_Calculator -i ./examples/example.axt -o ./examples/example.axt.kaks -m YN
 ```
 
 # Manual
+
+```
+./kakscalculator2/bin/KaKs_Calculator -h
+```
 
 see manual in KaKs_Calculator2.0.tar.gz /doc/KaKs_Calculator2.0_manual.pdf from [https://sourceforge.net/projects/kakscalculator2/](https://sourceforge.net/projects/kakscalculator2/)
 
