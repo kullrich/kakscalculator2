@@ -13,9 +13,17 @@
 * Author: Zhang Zhang (zhanghzhang@genomics.org.cn)
 * Date: Jan.21, 2005
 
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
+
 *************************************************************/
 
 #include "KaKs.h"
+#ifdef __APPLE__
+#else
+    #include <cstring>
+#endif
 
 KAKS::KAKS() {
 
@@ -69,7 +77,7 @@ KAKS::KAKS() {
 	method_ref.push_back("Wang, DP., Zhang, S., He, FH., Zhu, J.,Hu, SN. and Yu, J.(2009) Genomics, Proteomics and Bioinformatics. In press.");
 	method_ref.push_back("Wang, DP., Zhang, S., He, FH., Zhu, J.,Hu, SN. and Yu, J.(2009) Genomics, Proteomics and Bioinformatics. In press.");
 	method_ref.push_back("Wang, DP., Zhang, S., He, FH., Zhu, J.,Hu, SN. and Yu, J.(2009) Genomics, Proteomics and Bioinformatics. In press.");
-    method_ref.push_back("Wang£¬DP., Wan, HL., Zhang, S. and Yu, J. (2009) Biology Direct, 4:20 (16 June 2009)");
+        method_ref.push_back("Wang, DP., Wan, HL., Zhang, S. and Yu, J. (2009) Biology Direct, 4:20 (16 June 2009)");
 
 	Initialize();	
 
