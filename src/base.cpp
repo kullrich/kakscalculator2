@@ -13,6 +13,10 @@
 * Author: Zhang Zhang (zhanghzhang@genomics.org.cn)
 * Date: Feb.2, 2005
 
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
+
 *************************************************************/
 
 #include "base.h"
@@ -62,14 +66,14 @@ Base::Base() {
 	
 	int i;
 	for(i=0; i<5; i++) {
-		Si[i] = Vi[i] = L[i] = NULL;
+		Si[i] = Vi[i] = L[i] = 0.0;
 	}
 	for (i=0; i<NUMBER_OF_RATES; i++) {
 		KAPPA[i] = 1;
 	}
 	
 	SEKa = SEKs = AICc = lnL = AkaikeWeight = NA;
-	Ka = Ks = Sd = Nd = S = N = snp = t = kappa = NULL;
+	Ka = Ks = Sd = Nd = S = N = snp = t = kappa = 0.0;
 
 	model = "";
 }
@@ -476,7 +480,7 @@ string Base::parseOutput() {
 	addString(result, tmp);
 
 	//Si for Li's series' methods(LWL85, LPB93...)
-	if (Si[0]!=NULL || Si[2]!=NULL || Si[4]!=NULL) { //Si[0], Si[2], Si[4]
+	if (Si[0]!=0.0 || Si[2]!=0.0 || Si[4]!=0.0) { //Si[0], Si[2], Si[4]
 		tmp  = CONVERT<string>(Si[0]);	tmp += ":";
 		tmp += CONVERT<string>(Si[2]);	tmp += ":";
 		tmp += CONVERT<string>(Si[4]);		
@@ -487,7 +491,7 @@ string Base::parseOutput() {
 	addString(result, tmp);
 
 	//Vi for Li's series' methods(LWL85, LPB93...)
-	if (Vi[0]!=NULL || Vi[2]!=NULL || Vi[4]!=NULL) { //Vi[0], Vi[2], Vi[4]
+	if (Vi[0]!=0.0 || Vi[2]!=0.0 || Vi[4]!=0.0) { //Vi[0], Vi[2], Vi[4]
 		tmp  = CONVERT<string>(Vi[0]);	tmp += ":";
 		tmp += CONVERT<string>(Vi[2]);	tmp += ":";
 		tmp += CONVERT<string>(Vi[4]);		
