@@ -13,6 +13,10 @@
 * Author: Zhang Zhang (zhang.zhang@yale.edu)
 * Date: Dec.30, 2005
 
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
+
   References: 
 	Zhang Zhang, Jun Li, Jun Yu. (2006) Computing Ka and Ks 
 	with a consideration of unequal transitional substitutions. 
@@ -32,7 +36,7 @@ int MYN::GetKappa(const string seq1, const string seq2) {
 	double kappatc_TN[2], kappaag_TN[2], kappa_TN[2];
 	double F[2][XSIZE], S[2], wk[2], pi4[4]; 
 	double T1, T2, V;//proportions of transitional differences between purines and between
-	double kdefault=2, nullValue=NULL;
+	double kdefault=2, nullValue=0.0;
 		
 	for(k=0; k<2; k++)
 		initArray(F[k],16);
@@ -196,7 +200,8 @@ int MYN::GetPMatCodon(double PMatrix[], double kappa, double omega) {
 
 	//scale the sum of PMat[][j](j=0-63) to zero
 	for (i=0,mr=0; i<CODON; i++) { 
-		PMatrix[i*CODON+i] =- sumArray(PMatrix+i*CODON,CODON);
+		//PMatrix[i*CODON+i] =- sumArray(PMatrix+i*CODON,CODON);
+                PMatrix[i*CODON+i] -= sumArray(PMatrix+i*CODON,CODON);
 		//The sum of transition probability of main diagnoal elements
 		mr -= pi[i]*PMatrix[i*CODON+i];
 	}
