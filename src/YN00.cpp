@@ -13,9 +13,9 @@
 * Author: Zhang Zhang (zhang.zhang@yale.edu)
 * Date: Jan.31, 2005
 
-* Modified Version: 
-* Modified Author:
-* Modified Date:
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
 
   Note: Source codes are adapted from yn00.c in PAML.
 
@@ -78,7 +78,7 @@ int YN00::GetKappa(const string seq1, const string seq2) {
 
 	int i,j,k,h,pos,c[2],aa[2],b[2][3],nondeg,fourdeg,by[3]={16,4,1};
 	double ka[2], F[2][XSIZE],S[2],wk[2], T,V, pi4[4];
-	double kdefault=2, nullValue=NULL, t;
+	double kdefault=2, nullValue=0.0, t;
 		
 	for(k=0; k<2; k++)
 		initArray(F[k],16);
