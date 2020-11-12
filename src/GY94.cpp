@@ -13,6 +13,10 @@
 * Author: Zhang Zhang  (zhanghzhang@genomics.org.cn)
 * Date: Oct.2, 2005
 
+* Modified Version: 2.0.1
+* Modified Author: Kristian K Ullrich
+* Modified Date: April.29, 2020
+
 * Note: Source codes are taken from codeml.c in PAML.
 
   References:
@@ -21,7 +25,12 @@
   Evol. 11:725-736.
 *************************************************************/
 #include "GY94.h"
-#include <malloc.h>
+#ifdef __APPLE__
+    #include <stdlib.h>
+#else
+    #include <malloc.h>
+    #include <cstring>
+#endif
 
 int GeneticCode[][64] = 
      {{13,13,10,10,15,15,15,15,18,18,-1,-1, 4, 4,-1,17,
