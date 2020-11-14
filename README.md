@@ -57,6 +57,6 @@ see manual in KaKs_Calculator2.0.tar.gz /doc/KaKs_Calculator2.0_manual.pdf from 
 
 Wang D., Wan H-L., Zhang S., and Yu J. (2009). **γ-MYN: a new algorithm for estimating Ka and Ks with consideration of variable substitution rates.** *Biology Direct*, **4(20)**. [https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-20](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-20)
 
-Wang D., Zhang S., He F., Zhu J., Hu S., Yu J. (2009). **How Do Variable Substitution Rates Influence Ka and Ks Calculations?** *Genomics Proteomics Bioinformatics*, **7(3)**, 116-127. [https://dx.doi.org/10.1016%2FS1672-0229(08)60040-6](https://dx.doi.org/10.1016/S1672-0229(08)60040-6)
+Wang D., Zhang S., He F., Zhu J., Hu S., Yu J. (2009). **How Do Variable Substitution Rates Influence Ka and Ks Calculations?** *Genomics Proteomics Bioinformatics*, **7(3)**, 116-127. [https://dx.doi.org/10.1016/S1672-0229(08)60040-6](https://dx.doi.org/10.1016/S1672-0229(08)60040-6)
 
-Wang D., Zhang Y., Zhang Z., Zhu J., Yu J. (2010). **KaKs_Calculator 2.0: a toolkit incorporating gamma-series methods and sliding window strategies.** *Genomics Proteomics Bioinformatics*, **8(1)**, 77-80. [https://dx.doi.org/10.1016%2FS1672-0229(10)60008-3](https://dx.doi.org/10.1016/S1672-0229(10)60008-3)
+Wang D., Zhang Y., Zhang Z., Zhu J., Yu J. (2010). **KaKs_Calculator 2.0: a toolkit incorporating gamma-series methods and sliding window strategies.** *Genomics Proteomics Bioinformatics*, **8(1)**, 77-80. [https://dx.doi.org/10.1016/S1672-0229(10)60008-3](https://dx.doi.org/10.1016/S1672-0229(10)60008-3)
