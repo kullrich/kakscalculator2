@@ -13,9 +13,9 @@
 * Author: Zhang Zhang (zhanghzhang@genomics.org.cn)
 * Date: Feb.2, 2005
 
-* Modified Version: 2.0.1
+* Modified Version: 2.0.2
 * Modified Author: Kristian K Ullrich
-* Modified Date: April.29, 2020
+* Modified Date: October.06, 2022
 
 *************************************************************/
 
@@ -27,8 +27,8 @@
 
 /*						The Genetic Codes 
 http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?mode=c
-	Last update of the Genetic Codes: October 05, 2000 */
-int genetic_code=1; //from 1 to 23
+	Last update of the Genetic Codes: October 06, 2022 */
+int genetic_code=1; //from 1 to 33
 /* Genetic standard codon table, !=stop codon */
 const char* transl_table[] = {
  "FFLLSSSSYY!!CC!WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "1-Standard Code",
@@ -53,7 +53,17 @@ const char* transl_table[] = {
  "", "20-",
  "FFLLSSSSYY!!CCWWLLLLPPPPHHQQRRRRIIMMTTTTNNNKSSSSVVVVAAAADDEEGGGG", "21-Trematode Mitochondrial Code",
  "FFLLSS!SYY!LCC!WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "22-Scenedesmus obliquus mitochondrial Code",
- "FF!LSSSSYY!!CC!WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "23-Thraustochytrium Mitochondrial Code"
+ "FF!LSSSSYY!!CC!WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "23-Thraustochytrium Mitochondrial Code",
+ "FFLLSSSSYY!!CCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSSKVVVVAAAADDEEGGGG", "24-Rhabdopleuridae Mitochondrial Code",
+ "FFLLSSSSYY!!CCGWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "25-Candidate Division SR1 and Gracilibacteria Code",
+ "FFLLSSSSYY!!CC!WLLLAPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "26-Pachysolen tannophilus Nuclear Code",
+ "FFLLSSSSYYQQCCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "27-Karyorelict Nuclear Code",
+ "FFLLSSSSYYQQCCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "28-Condylostoma Nuclear Code",
+ "FFLLSSSSYYYYCC!WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "29-Mesodinium Nuclear Code",
+ "FFLLSSSSYYEECC!WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "30-Peritrich Nuclear Code",
+ "FFLLSSSSYYEECCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG", "31-Blastocrithidia Nuclear Code",
+ "", "32-",
+ "FFLLSSSSYYY!CCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSSKVVVVAAAADDEEGGGG", "33-Cephalodiscidae Mitochondrial UAA-Tyr Code"
 };
 
 string seq_name;		//sequences' name
